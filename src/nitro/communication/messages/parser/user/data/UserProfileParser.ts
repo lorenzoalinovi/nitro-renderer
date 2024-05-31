@@ -16,6 +16,8 @@ export class UserProfileParser implements IMessageParser
     private _groups: HabboGroupEntryData[];
     private _secondsSinceLastVisit: number;
     private _openProfileWindow: boolean;
+    private _profile_image: string; // Nuovo campo
+    private _banner_image: string; // Nuovo campo
 
     public flush(): boolean
     {
@@ -32,13 +34,15 @@ export class UserProfileParser implements IMessageParser
         this._groups = [];
         this._secondsSinceLastVisit = 0;
         this._openProfileWindow = false;
+        this._profile_image = null; // Reset del nuovo campo
+        this._banner_image = null; // Reset del nuovo campo
 
         return true;
     }
 
     public parse(wrapper: IMessageDataWrapper): boolean
     {
-        if(!wrapper) return false;
+        if (!wrapper) return false;
 
         this._id = wrapper.readInt();
         this._username = wrapper.readString();
@@ -52,13 +56,15 @@ export class UserProfileParser implements IMessageParser
         this._isOnline = wrapper.readBoolean();
         const groupsCount = wrapper.readInt();
 
-        for(let i = 0; i < groupsCount; i++)
+        for (let i = 0; i < groupsCount; i++)
         {
             this._groups.push(new HabboGroupEntryData(wrapper));
         }
 
         this._secondsSinceLastVisit = wrapper.readInt();
         this._openProfileWindow = wrapper.readBoolean();
+        this._profile_image = wrapper.readString(); // Parsing del nuovo campo
+        this._banner_image = wrapper.readString(); // Parsing del nuovo campo
 
         return true;
     }
@@ -126,5 +132,15 @@ export class UserProfileParser implements IMessageParser
     public get openProfileWindow(): boolean
     {
         return this._openProfileWindow;
+    }
+
+    public get profile_image(): string // Getter per il nuovo campo
+    {
+        return this._profile_image;
+    }
+
+    public get banner_image(): string // Getter per il nuovo campo
+    {
+        return this._banner_image;
     }
 }

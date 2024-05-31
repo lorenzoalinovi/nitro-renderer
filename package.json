@@ -28,7 +28,7 @@
     "@pixi/canvas-extract": "~6.5.0",
     "@pixi/canvas-renderer": "~6.5.0",
     "@pixi/constants": "~6.5.0",
-    "@pixi/core": "~6.5.0",
+    "@pixi/core": "^7.4.2",
     "@pixi/display": "~6.5.0",
     "@pixi/events": "~6.5.0",
     "@pixi/extensions": "~6.5.0",

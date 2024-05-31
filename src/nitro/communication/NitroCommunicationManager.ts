@@ -2,16 +2,18 @@ import { ICommunicationManager, IConnection, IConnectionStateListener, IMessageC
 import { NitroManager } from '../../core';
 import { NitroCommunicationDemoEvent, SocketConnectionEvent } from '../../events';
 import { Nitro } from '../Nitro';
+import { IUserImagesAPI } from './IUserImagesAPI';
 import { NitroCommunicationDemo } from './NitroCommunicationDemo';
 import { NitroMessages } from './NitroMessages';
+import { UserImagesAPI } from './UserImagesAPI';
 
 export class NitroCommunicationManager extends NitroManager implements INitroCommunicationManager, IConnectionStateListener
 {
     private _communication: ICommunicationManager;
     private _connection: IConnection;
     private _messages: IMessageConfiguration;
-
     private _demo: INitroCommunicationDemo;
+    public userImagesAPI: IUserImagesAPI;
 
     constructor(communication: ICommunicationManager)
     {
@@ -22,6 +24,7 @@ export class NitroCommunicationManager extends NitroManager implements INitroCom
         this._messages = new NitroMessages();
 
         this._demo = new NitroCommunicationDemo(this);
+        this.userImagesAPI = new UserImagesAPI(/* ... */);
 
         this.onConnectionOpenedEvent = this.onConnectionOpenedEvent.bind(this);
         this.onConnectionClosedEvent = this.onConnectionClosedEvent.bind(this);
