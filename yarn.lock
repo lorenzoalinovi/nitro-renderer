@@ -207,31 +207,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pixi/app@~6.5.0":
-  version "6.5.8"
-  resolved "https://registry.yarnpkg.com/@pixi/app/-/app-6.5.8.tgz#0a09bce23a222458e6a769d8ecbb0643ee165368"
-  integrity sha512-pDPkamtYDaPhscNxack+bHNqazCwrqw6cAotKyoz1mvLXeGhxqTntOcfgGLZR2fNbnY8EBmdduLvH7n2jI/LTg==
-
-"@pixi/basis@~6.5.0":
-  version "6.5.8"
-  resolved "https://registry.yarnpkg.com/@pixi/basis/-/basis-6.5.8.tgz#a9ded903fea5d0ba240c22839648868de2f64702"
-  integrity sha512-j4j08fZsdg8b3F1Cs1cE478m6aVk6ix53pTrv+kxq0Givl3ctO+wwWEU07BFAuvsGGySKrhAEt4vmz78cRK9KQ==
-
-"@pixi/canvas-display@~6.5.0":
-  version "6.5.8"
-  resolved "https://registry.yarnpkg.com/@pixi/canvas-display/-/canvas-display-6.5.8.tgz#9d280a2ee8b9ec0fbf2a9420b592152f91902997"
-  integrity sha512-7kgFmN2dCWBhgo+CEKpZDmgqRkYCQeHoVsyOSyxSvTqHDnMjFane1OwTBg6p4PlsE+Jn1BEx/3V2ja/XbR9XOg==
-
-"@pixi/canvas-extract@~6.5.0":
-  version "6.5.8"
-  resolved "https://registry.yarnpkg.com/@pixi/canvas-extract/-/canvas-extract-6.5.8.tgz#c4ae9f6c29aea26ac9cdc00ed89c84ba213aa2ec"
-  integrity sha512-9jRVlQpumyj0QWF9CQzsDqg7QkqYxLhX/Xu87o5bWfpwrocF6AlJJak0zc6WMLvDEJ1ZI3mNdV2P1AW9ba4+WA==
-
-"@pixi/canvas-renderer@~6.5.0":
-  version "6.5.8"
-  resolved "https://registry.yarnpkg.com/@pixi/canvas-renderer/-/canvas-renderer-6.5.8.tgz#88c816f9b0aa116ac25d322963f6a0f7bc3051c4"
-  integrity sha512-W+qp05VNtPIoE1/azAyAcYLYXONdql15ts72bsGssRvGJGmECzfhOKq389S4j9X5uVKm51CZhChE7yReWkbUEw==
-
 "@pixi/color@7.4.2":
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/@pixi/color/-/color-7.4.2.tgz#d564a0b589166afb1c4a0e85c968b7375dbfc06f"
@@ -254,7 +229,7 @@
   resolved "https://registry.yarnpkg.com/@pixi/constants/-/constants-6.5.8.tgz#034bf0f318546bf3c9346f4f3a7528f8cadcdb55"
   integrity sha512-yYRCebBPqajm1kn5f8QQTTvl7oDRDk1nppfO+JpqbrFXg0W7oqIMurec3KeG9RdZW5foOiXDoz1Gw+VtolYIEw==
 
-"@pixi/core@^7.4.2":
+"@pixi/core@7.4.2":
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/@pixi/core/-/core-7.4.2.tgz#521de6fe99d48ffffef7e79d4dfde5c5055e8a13"
   integrity sha512-UbMtgSEnyCOFPzbE6ThB9qopXxbZ5GCof2ArB4FXOC5Xi/83MOIIYg5kf5M8689C5HJMhg2SrJu3xLKppF+CMg==
