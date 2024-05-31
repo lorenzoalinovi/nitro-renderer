@@ -207,6 +207,16 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@pixi/app@~6.5.0":
+  version "6.5.10"
+  resolved "https://registry.yarnpkg.com/@pixi/app/-/app-6.5.10.tgz#4877929bd53595484c1d334e4cda43bb9d27eca1"
+  integrity sha512-VsNHLajZ5Dbc/Zrj7iWmIl3eu6Fec+afjW/NXXezD8Sp3nTDF0bv5F+GDgN/zSc2gqIvPHyundImT7hQGBDghg==
+
+"@pixi/canvas-display@~6.5.0":
+  version "6.5.10"
+  resolved "https://registry.yarnpkg.com/@pixi/canvas-display/-/canvas-display-6.5.10.tgz#995a932da869fa999131b72c5914398f235fdd9c"
+  integrity sha512-pT0uhEoy24ei/5JwCYgpf+4A5vP8X5zFICJJOm2bE0k/veLc/nIpHj8SL3jG4CDmYGNAntVodEy+/E23HfzZxQ==
+
 "@pixi/constants@~6.5.0":
   version "6.5.8"
   resolved "https://registry.yarnpkg.com/@pixi/constants/-/constants-6.5.8.tgz#034bf0f318546bf3c9346f4f3a7528f8cadcdb55"

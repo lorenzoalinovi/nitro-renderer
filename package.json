@@ -25,6 +25,8 @@
     "@pixi/constants": "~6.5.0",
     "@pixi/core": "~6.5.0",
     "@pixi/display": "~6.5.0",
+    "@pixi/app": "~6.5.0",
+    "@pixi/canvas-display": "~6.5.0",
     "@pixi/events": "~6.5.0",
     "@pixi/extensions": "~6.5.0",
     "@pixi/extract": "~6.5.0",
