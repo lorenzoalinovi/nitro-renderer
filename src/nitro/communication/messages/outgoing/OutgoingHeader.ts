@@ -1,5 +1,11 @@
+import { SendLinkMessageComposer } from './user';
+
 export class OutgoingHeader
 {
+    static SENDLINKMESSAGE(SENDLINKMESSAGE: any, SendLinkMessageComposer: SendLinkMessageComposer)
+    {
+        throw new Error('Method not implemented.');
+    }
     public static ACHIEVEMENT_LIST = 219;
     public static AUTHENTICATION = -1;
     public static BOT_CONFIGURATION = 1986;
@@ -468,4 +474,5 @@ export class OutgoingHeader
     public static RENTABLE_EXTEND_RENT_OR_BUYOUT_STRIP_ITEM = 2115;
     public static RENTABLE_EXTEND_RENT_OR_BUYOUT_FURNI = 1071;
     public static RENTABLE_GET_RENT_OR_BUYOUT_OFFER = 2518;
+    public static SEND_LINK = 3194;
 }
