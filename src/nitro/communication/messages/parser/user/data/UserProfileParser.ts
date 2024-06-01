@@ -16,8 +16,8 @@ export class UserProfileParser implements IMessageParser
     private _groups: HabboGroupEntryData[];
     private _secondsSinceLastVisit: number;
     private _openProfileWindow: boolean;
-    /*private _bannerImage: string;
-    private _profileImage: string;*/
+    //private _bannerImage: string;
+    private _profileImage: string;
 
     public flush(): boolean
     {
@@ -34,8 +34,8 @@ export class UserProfileParser implements IMessageParser
         this._groups = [];
         this._secondsSinceLastVisit = 0;
         this._openProfileWindow = false;
-        /*this._bannerImage = null;
-        this._profileImage = null;*/
+        //this._bannerImage = null;
+        this._profileImage = null;
 
         return true;
     }
@@ -63,8 +63,8 @@ export class UserProfileParser implements IMessageParser
 
         this._secondsSinceLastVisit = wrapper.readInt();
         this._openProfileWindow = wrapper.readBoolean();
-        /*this._bannerImage = wrapper.readString();
-        this._profileImage = wrapper.readString();*/
+        /*this._bannerImage = wrapper.readString();*/
+        this._profileImage = wrapper.readString();
         return true;
     }
 
@@ -136,10 +136,10 @@ export class UserProfileParser implements IMessageParser
     /*public get bannerImage(): string // Getter per il nuovo campo
     {
         return this._bannerImage;
-    }
+    }*/
 
     public get profileImage(): string // Getter per il nuovo campo
     {
         return this._profileImage;
-    }*/
+    }
 }
