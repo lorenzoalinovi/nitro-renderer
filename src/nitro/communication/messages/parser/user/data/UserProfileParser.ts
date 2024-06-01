@@ -17,7 +17,7 @@ export class UserProfileParser implements IMessageParser
     private _secondsSinceLastVisit: number;
     private _openProfileWindow: boolean;
     //private _bannerImage: string;
-    private _profiloImm: string;
+    private _profiloImm: string = "";
 
     public flush(): boolean
     {
@@ -35,7 +35,7 @@ export class UserProfileParser implements IMessageParser
         this._secondsSinceLastVisit = 0;
         this._openProfileWindow = false;
         //this._bannerImage = null;
-        this._profiloImm = null;
+        this._profiloImm = "";
 
         return true;
     }
@@ -64,7 +64,7 @@ export class UserProfileParser implements IMessageParser
         this._secondsSinceLastVisit = wrapper.readInt();
         this._openProfileWindow = wrapper.readBoolean();
         /*this._bannerImage = wrapper.readString();*/
-        this._profiloImm = wrapper.readString();
+        this._profiloImm = wrapper.readString() || "";
         return true;
     }
 
