@@ -11,7 +11,6 @@ export class UserMottoComposer implements IMessageComposer<ConstructorParameters
 
     public getMessageArray()
     {
-        console.log('a')
         return this._data;
     }
 
