@@ -16,8 +16,8 @@ export class UserProfileParser implements IMessageParser
     private _groups: HabboGroupEntryData[];
     private _secondsSinceLastVisit: number;
     private _openProfileWindow: boolean;
-    public _profileImage: string = ""; // Inizializzazione del nuovo campo
-    public _bannerImage: string = ""; // Inizializzazione del nuovo campo
+    private _profileImage: string = ""; // Inizializzazione del nuovo campo
+    private _bannerImage: string = ""; // Inizializzazione del nuovo campo
 
     public flush(): boolean
     {
