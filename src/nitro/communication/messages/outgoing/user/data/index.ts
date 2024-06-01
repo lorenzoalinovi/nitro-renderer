@@ -3,6 +3,7 @@ export * from './GetIgnoredUsersComposer';
 export * from './GetUserTagsComposer';
 export * from './IgnoreUserComposer';
 export * from './IgnoreUserIdComposer';
+export * from './SendLinkMessageComposer';
 export * from './UnignoreUserComposer';
 export * from './UserCurrentBadgesComposer';
 export * from './UserFigureComposer';
