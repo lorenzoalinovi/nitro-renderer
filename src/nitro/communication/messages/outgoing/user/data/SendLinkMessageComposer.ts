@@ -2,11 +2,11 @@ import { IMessageComposer } from '../../../../../../api';
 
 export class SendLinkMessageComposer implements IMessageComposer<ConstructorParameters<typeof SendLinkMessageComposer>>
 {
-    private _data: [string];
+    private _data: [string, string];
 
-    constructor(link: string)
+    constructor(link: string, imageType: string)
     {
-        this._data = [link];
+        this._data = [link, imageType];
     }
 
     public getMessageArray(): ConstructorParameters<typeof SendLinkMessageComposer>
@@ -16,6 +16,6 @@ export class SendLinkMessageComposer implements IMessageComposer<ConstructorPara
 
     public dispose(): void
     {
-        this._data = [undefined];
+        this._data = [undefined, undefined];
     }
 }
