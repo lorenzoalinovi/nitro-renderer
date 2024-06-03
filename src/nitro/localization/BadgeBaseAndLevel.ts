@@ -11,17 +11,20 @@ export class BadgeBaseAndLevel
         this.parseText();
     }
 
-    private parseText():void
+    private parseText(): void
     {
-        let length = (this._badgeId.length - 1);
+        if (this._badgeId)
+        {
+            let length = (this._badgeId.length - 1);
 
-        while(length > 0 && this.isNumber(this._badgeId.charAt(length))) length--;
+            while (length > 0 && this.isNumber(this._badgeId.charAt(length))) length--;
 
-        this._base = this._badgeId.substr(0, (length + 1));
+            this._base = this._badgeId.substr(0, (length + 1));
 
-        const level = this._badgeId.substr((length + 1), this._badgeId.length);
+            const level = this._badgeId.substr((length + 1), this._badgeId.length);
 
-        if(level && (level !== '')) this._level = Number.parseInt(level);
+            if (level && (level !== '')) this._level = Number.parseInt(level);
+        }
     }
 
     private isNumber(text: string): boolean
@@ -36,7 +39,7 @@ export class BadgeBaseAndLevel
         return this._level;
     }
 
-    public set level(k : number)
+    public set level(k: number)
     {
         this._level = Math.max(1, k);
     }
